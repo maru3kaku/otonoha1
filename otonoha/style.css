@@ -1,0 +1,214 @@
+/* リセットCSS */
+body {
+  font-size: 14px;
+  color: #333;
+  margin: 0 auto;
+}
+h1,h2,h3,h4,h5,h6,p {
+  padding: 10px 0;
+  margin: 0;
+}
+
+ul,li {
+  padding: 0;
+  margin: 0;
+}
+
+/* ヘッダー */
+header {
+  height: 40px;
+  background-color: yellowgreen;
+  padding: 10px 10px 10px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar {
+  width: 50%;
+  padding: 20px;
+}
+
+.nav-lists {
+  display: flex;
+  justify-content: space-around;
+}
+
+li{
+  list-style: none;
+}
+h1{font-size: 18px;
+  color: lightgreen;
+}
+  
+.o{color:pink;
+  transform: rotate( 32deg );
+  font-size: 32px;
+}
+.to{color:yellow;
+  transform: rotate( 32deg );
+  font-size: 22px;
+}
+.no{color:orange;
+  transform: rotate( 32deg );
+  font-size: 24px;
+}
+.ha{color:aqua;
+  transform: rotate( 32deg );
+  font-size: 28px;
+}
+.onpu{color:rgb(0, 255, 64);
+  transform: rotate( 32deg );
+  font-size: 28px;
+}
+/* first-viewクラスからbottom-contentクラスまでの要素の親要素 */
+.contents {
+  background-color:white;
+}
+
+.first-view { 
+  position: relative;
+  max-width: 80%;
+  height: 100%;
+  display: flex;    /* 子要素を横に並べる */
+  justify-content: center;
+  overflow: hidden; /* はみ出た部分は表示しない */
+  margin: 0 auto;   /* 水平方向中央寄せ */
+}
+.image {
+  position: absolute;
+	width: 80%;
+  max-height: 100%;
+	opacity: 0;
+	animation: change-img-anim 30s infinite;
+}
+.image:nth-of-type(1) {
+  animation: change-img-anim-first 30s infinite;
+	animation-delay: 0s;
+}
+.image:nth-of-type(2) {
+	animation-delay: 10s;
+}
+@keyframes change-img-anim-first {
+	0%{ opacity: １;}
+  30%{ opacity: 1;}
+  36%{ opacity: 1;}
+  45%{ opacity: 0;}
+  100%{ opacity: 0;}
+}
+@keyframes change-img-anim {
+  0%{ opacity: 0;}
+  50%{ opacity: 1;}
+  60%{ opacity: 1;}
+  80%{ opacity: 0;}
+}
+
+/*オトノハロゴと説明*/
+.second-content{
+  display: flex;
+  justify-content: space-around;
+
+}
+
+
+/* 新着情報 */
+.upper-content {
+  height: 300px ;
+  margin: 0 160px;
+}
+.topics{
+  font-size: 28px;
+  color:#FCB632;
+  border-bottom:dotted;/*下線を点線にする*/
+border-color:#DEFC32;
+border-width:3px;
+}
+.topics2{
+  font-size: 20px;
+  color:rgb(177, 125, 30)
+}
+.insta_btn {
+  display: inline-block;
+  text-align: center;/*中央揃え*/
+  color: #2e6ca5;/*文字色*/
+  font-size: 20px;/*文字サイズ*/
+  text-decoration: none;/*下線消す*/
+}
+
+.insta_btn:hover {/*ホバー時*/
+  color:#668ad8;/*文字色*/
+  transition: .5s;/*ゆっくり変化*/
+}
+
+.insta_btn .insta{/*アイコンの背景*/
+  position: relative;/*相対配置*/
+  display: inline-block;
+  width: 50px;/*幅*/
+  height: 50px;/*高さ*/
+  background: -webkit-linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+  background: linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;/*グラデーション①*/
+  overflow: hidden;/*はみ出た部分を隠す*/
+  border-radius: 13px;/*角丸に*/
+
+}
+
+.insta_btn .insta:before{/*グラデーションを重ねるため*/
+  content: '';
+  position: absolute;/*絶対配置*/
+  top: 23px;/*ずらす*/
+  left: -18px;/*ずらす*/
+  width: 60px;/*グラデーションカバーの幅*/
+  height: 60px;/*グラデーションカバーの高さ*/
+  background: -webkit-radial-gradient(#ffdb2c 10%, rgba(255, 105, 34, 0.65) 55%, rgba(255, 88, 96, 0) 70%);
+  background: radial-gradient(#ffdb2c 10%, rgba(255, 105, 34, 0.65) 55%, rgba(255, 88, 96, 0) 70%);/*グラデーション②*/
+}
+
+.insta_btn .fa-instagram {/*アイコン*/
+  color: #FFF;/*白に*/
+  position: relative;/*z-indexを使うため*/
+  z-index: 2;/*グラデーションより前に*/
+  font-size: 35px;/*アイコンサイズ*/
+  line-height: 50px;/*高さと合わせる*/
+}
+/* 新着情報 */
+.second-content{}
+/* 新着情報 */
+.bottom-content{}
+/* 新着情報 */
+.fourth-content{}
+/* 新着情報 */
+.fifth-content{}
+/* 新着情報 */
+.six-content{}
+/* 新着情報 */
+.seven-content{}
+/* 新着情報 */
+.eight-content{}
+/* 新着情報 */
+.nine-content{}
+/* 新着情報 */
+.ten-content{}
+/* 新着情報 */
+.eleven-content{}
+/* 新着情報 */
+.twelve-content{}
+/* 新着情報 */
+.thirteen-content{}
+/* 新着情報 */
+.fourteen-content{}
+/* 新着情報 */
+.fifteen-content{}
+
+
+
+/* フッター */
+iframe{
+  max-width: 100%;
+  max-height: 100px;
+  border: none;
+
+}
+footer {
+  height: 200px;
+  background-color: orange;
+}
+/* 省略 */
